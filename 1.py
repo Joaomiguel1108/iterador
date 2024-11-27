@@ -1,21 +1,5 @@
-class MyNumbers:
-  def __iter__(self):
-    self.a = 1
-    return self
+lista = [1,2,3,4]
 
-  def __next__(self):
-    if self.a <= 2024:
-      x = self.a
-      self.a += 1
-      return x
-    else:
-      raise StopIteration
+iterador = iter(lista)
 
-myclass = MyNumbers()
-myiter = iter(myclass)
-
-
-print(next(myiter))
-print(next(myiter))
-print(next(myiter))
-print(next(myiter))
+print(next(iterador))
